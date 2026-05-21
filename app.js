@@ -1,6 +1,4 @@
-const { createApp } = Vue;
-
-createApp({
+Vue.createApp({
   data() {
     return {
       form: {
@@ -59,7 +57,12 @@ createApp({
 
         this.places = await response.json();
       } catch (error) {
-        this.placesError = "Ghibli Park places could not be loaded. Please run this page through a local server.";
+        if (typeof window.GHIBLI_PARK_FALLBACK !== "undefined") {
+          this.places = window.GHIBLI_PARK_FALLBACK;
+        } else {
+          this.placesError =
+            "Ghibli Park places could not be loaded. Include ghibli_park.json and ghibli_park_data.js in your submission.";
+        }
       } finally {
         this.isLoadingPlaces = false;
       }

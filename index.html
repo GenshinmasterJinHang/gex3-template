@@ -121,14 +121,12 @@
                 <div
                   v-for="place in places"
                   :key="place.id"
-                  class="place-card"
+                  class="card place-card"
                   :class="{ selected: isPlaceSelected(place) }"
                   role="button"
                   tabindex="0"
-                  v-on:click="togglePlace(place)"
-                  v-on:keyup.enter="togglePlace(place)"
-                  v-on:keyup.space.prevent="togglePlace(place)">
-                  <img :src="place.image" :alt="place.name">
+                  v-on:click="togglePlace(place)">
+                  <img :src="place.image" :alt="place.name" class="card-img-top img-fluid">
                   <div class="card-body">
                     <h3 class="card-title h5">{{ place.name }}</h3>
                     <p class="card-text">{{ place.description }}</p>
@@ -339,6 +337,7 @@
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
   </script>
 
+  <script src="ghibli_park_data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

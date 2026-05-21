@@ -143,8 +143,8 @@ Vue.createApp({
         isValid = false;
       }
 
-      if (!this.form.cvv) {
-        this.errors.cvv = "CVV is required.";
+      if (!this.form.cvc) {
+        this.errors.cvc = "CVV is required.";
         isValid = false;
       }
 

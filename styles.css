@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Luna";
-  src: url("assets/fonts/Luna.ttf") format("truetype");
+  src: url("assets/assets/fonts/Luna.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -23,7 +23,7 @@ body {
   color: var(--ink);
   background:
     linear-gradient(rgba(6, 35, 22, 0.38), rgba(6, 35, 22, 0.58)),
-    url("assets/bg-totoro.jpg") center / cover fixed;
+    url("assets/assets/bg-totoro.jpg") center / cover fixed;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -96,23 +96,23 @@ body {
 }
 
 .header-personal {
-  background-image: url("assets/acc-bg1.jpg");
+  background-image: url("assets/assets/acc-bg1.jpg");
 }
 
 .header-places {
-  background-image: url("assets/acc-bg2.jpg");
+  background-image: url("assets/assets/acc-bg2.jpg");
 }
 
 .header-visitors {
-  background-image: url("assets/acc-bg3.jpg");
+  background-image: url("assets/assets/acc-bg3.jpg");
 }
 
 .header-accommodation {
-  background-image: url("assets/acc-bg4.jpg");
+  background-image: url("assets/assets/acc-bg4.jpg");
 }
 
 .header-payment {
-  background-image: url("assets/acc-bg5.jpg");
+  background-image: url("assets/assets/acc-bg5.jpg");
 }
 
 .accordion-body {

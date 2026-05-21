@@ -11,7 +11,7 @@ Vue.createApp({
         cardholderName: "",
         cardNumber: "",
         expirationDate: "",
-        cvv: ""
+        cvc: ""
       },
       errors: {},
       generalError: "",

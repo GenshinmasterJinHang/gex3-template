@@ -57,12 +57,7 @@ Vue.createApp({
 
         this.places = await response.json();
       } catch (error) {
-        if (typeof window.GHIBLI_PARK_FALLBACK !== "undefined") {
-          this.places = window.GHIBLI_PARK_FALLBACK;
-        } else {
-          this.placesError =
-            "Ghibli Park places could not be loaded. Include ghibli_park.json and ghibli_park_data.js in your submission.";
-        }
+        this.placesError = "Ghibli Park places could not be loaded. Please run this page through a local server.";
       } finally {
         this.isLoadingPlaces = false;
       }
